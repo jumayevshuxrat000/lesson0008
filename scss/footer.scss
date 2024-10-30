@@ -1,0 +1,106 @@
+.join-us {
+    text-align: center;
+    padding: 2rem 1rem;
+    
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+        color: #555;
+    }
+}
+
+.design-inspiration {
+    background-color: #c0c0c0;
+    padding: 4rem 2rem;
+    text-align: center;
+
+    .design-box {
+        max-width: 600px;
+        margin: 0 auto;
+
+        h3 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+    }
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 3rem 2rem;
+    text-align: center;
+
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+        padding-bottom: 2rem;
+        
+        .footer-links {
+            ul {
+                list-style: none;
+                padding: 0;
+
+                li {
+                    margin-bottom: 0.5rem;
+
+                    a {
+                        text-decoration: none;
+                        color: #333;
+
+                        &:hover {
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+
+        .newsletter {
+            h4 {
+                font-size: 1.2rem;
+                margin-bottom: 0.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+                color: #555;
+            }
+        }
+    }
+
+    .footer-bottom {
+        font-size: 0.9rem;
+        color: #aaa;
+    }
+}
+
+@media (max-width: 768px) {
+    .join-us h2 {
+        font-size: 1.6rem;
+    }
+    
+    .join-us p,
+    .design-inspiration .design-box p {
+        font-size: 1rem;
+    }
+
+    .design-inspiration .design-box h3 {
+        font-size: 1.5rem;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}

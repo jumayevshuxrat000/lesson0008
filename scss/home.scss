@@ -1,0 +1,121 @@
+.home-office {
+    position: relative;
+    background-image: url('../assets/homepic.png');
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 2rem;
+    color: #fff;
+    text-align: center;
+
+    .overlay {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 2rem;
+        border-radius: 8px;
+        display: inline-block;
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .explore-btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+
+            &:hover {
+                background-color: #333;
+            }
+        }
+    }
+}
+
+.made-hard-way {
+    text-align: center;
+    padding: 4rem 2rem;
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+        max-width: 600px;
+        margin: 0 auto;
+        color: #333;
+    }
+
+    img {
+        width: 100%;
+        max-width: 800px;
+        border-radius: 4px;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-office {
+        padding: 3rem 1rem;
+
+        .overlay {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .made-hard-way {
+        padding: 2rem 1rem;
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .home-office {
+        padding: 2rem 1rem;
+
+        .overlay {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    .made-hard-way {
+        padding: 1.5rem 1rem;
+
+        h2 {
+            font-size: 1.2rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
+    }
+}
